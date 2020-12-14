@@ -1,0 +1,43 @@
+{
+    "configurations": [
+        {
+            "name": "Win32",
+            "browse": {
+                "path": [
+                    "${workspaceFolder}",
+                    "${workspaceFolder}/lib/gtest/googletest/include",
+                    "${env:CPP_PATH}/lib/gcc/x86_64-w64-mingw32/7.3.0/include/c++",
+                    "${env:CPP_PATH}lib/gcc/x86_64-w64-mingw32/7.3.0/include/c++/x86_64-w64-mingw32",
+                    "${env:CPP_PATH}/lib/gcc/x86_64-w64-mingw32/7.3.0/include/c++/backward",
+                    "${env:CPP_PATH}/lib/gcc/x86_64-w64-mingw32/7.3.0/include",
+                    "${env:CPP_PATH}/include",
+                    "${env:CPP_PATH}/x86_64-w64-mingw32/include",
+                    "${env:CPP_PATH}/lib/gcc/x86_64-w64-mingw32/7.3.0/include-fixed"
+                ],
+                "limitSymbolsToIncludedHeaders": true
+            },
+            "includePath": [
+                "${workspaceFolder}",
+                "${workspaceFolder}/lib/gtest/googletest/include",
+                "${env:CPP_PATH}/lib/gcc/x86_64-w64-mingw32/7.3.0/include/c++",
+                "${env:CPP_PATH}/lib/gcc/x86_64-w64-mingw32/7.3.0/include/c++/x86_64-w64-mingw32",
+                "${env:CPP_PATH}/lib/gcc/x86_64-w64-mingw32/7.3.0/include/c++/backward",
+                "${env:CPP_PATH}/lib/gcc/x86_64-w64-mingw32/7.3.0/include",
+                "${env:CPP_PATH}/include",
+                "${env:CPP_PATH}/x86_64-w64-mingw32/include",
+                "${env:CPP_PATH}/lib/gcc/x86_64-w64-mingw32/7.3.0/include-fixed"
+            ],
+            "defines": [
+                "_DEBUG",
+                "UNICODE",
+                "__GNUC__=7",
+                "__cdecl=__attribute__((__cdecl__))"
+            ],
+            "cStandard": "c11",
+            "cppStandard": "c++17",
+            "intelliSenseMode": "clang-x64",
+            "configurationProvider": "vector-of-bool.cmake-tools"
+        }
+    ],
+    "version": 4
+}
