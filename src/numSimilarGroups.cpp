@@ -78,7 +78,7 @@ TEST(numSimilarGroups, simple) {
     {
       {"omv","ovm"},
       1
-    }，
+    },
     {
       {"nmiwx","mniwx","wminx","mnixw","xnmwi"},
       2
