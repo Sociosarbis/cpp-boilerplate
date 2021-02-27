@@ -1,4 +1,4 @@
-COMMON_OPTIONS=-Wall -g -Og -static-libgcc -std=c++17
+COMMON_OPTIONS=-Wall -g -O0 -static-libgcc -std=c++17
 CLANG_FLAGS=-fcolor-diagnostics --target=x86_64-w64-mingw
 GTEST_HOME=lib/gtest/googletest
 GTEST_OPTIONS=-I${GTEST_HOME}/include -L${GTEST_HOME}/build/lib -lgtest -lgtest_main
