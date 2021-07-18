@@ -4,7 +4,7 @@ GTEST_HOME=lib/gtest/googletest
 GTEST_OPTIONS=-I${GTEST_HOME}/include -L${GTEST_HOME}/build/lib -lgtest -lgtest_main
 .PHONY: gtest
 dist/%.exe: src/%.cpp dist
-	g++ -o $@ $< ${GTEST_OPTIONS} ${COMMON_OPTIONS}
+	g++ -o $@ $(subst _,/,$<) ${GTEST_OPTIONS} ${COMMON_OPTIONS}
 run_%: dist/%.exe
 	$<
 ${GTEST_HOME}/include:
@@ -16,3 +16,5 @@ ${GTEST_HOME}/build/lib/libgtest.a ${GTEST_HOME}/build/lib/libgtest_main.a: ${GT
 gtest: ${GTEST_HOME}/build/lib/libgtest_main.a ${GTEST_HOME}/build/lib/libgtest.a
 dist:
 	mkdir dist
+src/%.cpp:
+	echo $@
